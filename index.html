@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Storefront</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopClone</div>
+            
+            <button class="nav-btn" data-target="home-page">Home</button>
+            <div class="cart-icon nav-btn" data-target="cart-page" style="cursor: pointer;">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-page" class="page-view">
+            <h1 class="page-title">Latest Arrivals</h1>
+            <div id="product-grid" class="product-grid"></div>
+        </section>
+
+        <section id="cart-page" class="page-view hidden">
+            <h1 class="page-title">Your Shopping Cart</h1>
+            <div id="cart-items">
+                <p style="text-align: center;">Your cart is currently empty.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
